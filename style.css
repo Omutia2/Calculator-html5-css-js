@@ -1,0 +1,223 @@
+/* General CSS style */
+* {
+    box-sizing: border-box;
+}
+
+#result {
+    text-align: center;
+}
+
+body {
+    margin: auto;
+    width: auto;
+    text-align: center;
+    color: white;
+    background-color: burlywood;
+
+   
+    
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 100%;
+    padding-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border: black dotted;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: blue;
+    color: white;
+}
+
+.topnav .search {
+    float: right;
+}
+
+
+.topnav .search button:hover {
+    background: #ccc;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    border: none;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav .search {
+        float: none;
+    }
+    .topnav a, .topnav input[type=text],
+    .topnav .search button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+
+/* Login form css */
+
+input[type=password] {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 0 0;
+}
+
+img.avatar {
+    width: 10%;
+    border-radius: 50%;
+}
+a{
+    color: coral;
+    text-decoration-line: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.accordion {
+    background-color: cornsilk;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+
+footer {
+    margin-top: 170px;
+}
+.footer {
+    padding-right: 15px;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: black;
+    display: none;
+    overflow: hidden;
+    /* For animation, added max-height and transition */
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    /* Set a calculated max-height using JS */
+}

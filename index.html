@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+
+        <div class="topnav">
+            <a class="active" href="#">Home</a>
+            <a class="active" href="#">About Us</a>
+            <a class="active" href="#">Terms of Service</a>
+            <div class="search">
+                <form>
+            <input type="text" placeholder="Search.." name="search">
+            <button style="float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        </div>
+        </div>
+    </head>
+    <body>
+        <h1 style="color: darkgoldenrod;">Calculator</h1>
+        
+        <button class="accordion">Function</button>
+        <div class="panel">
+        <p>This calculator calculates numbers using basic <strong><em>JavaScript numeric operators</em></strong>.</p>
+        </div>
+        <form>
+            Value 1: <input type="text" id="value1" required><br>
+            Value 2: <input type="text" id="value2" required><br>
+            Operator:
+            <select id="operator">
+                <option value="add">Add</option>
+                <option value="min">Minus</option>
+                <option value="div">Divide</option>
+                <option value="mul">Multiply</option>
+            </select> <br>
+            <button type="button" onclick="calc()">Calculate</button>
+        </form>
+
+        <div id="result"> </div>
+
+        
+
+        <h2 style="color: coral;"><strong><em>Login Form</em></strong></h2>
+        <form class="login">
+            <div class="imgcontainer">
+                <img src="images/avatar-default-icon.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username:</b></label>
+                <input type="text" class="login" placeholder="Enter Username" name="uname" required><br>
+                <label for="psw"><b>Password:</b></label>
+                <input type="text" placeholder="Enter Password" name="psw" required><br>
+                  
+                <a href="#">Forgot Password</a><br>
+                
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember Me
+                </label><br>
+                <button type="submit">Login</button>
+                <button type="button" class="cancelbtn">Cancel</button>
+               
+            </div>
+            
+        </form>
+
+        <footer>
+            <div>
+            <a class="footer" href="#">Home</a>
+            <a class="footer" href="#">About Us</a>
+            <a class="footer" href="#">Terms of Service</a>
+            <a class="footer" href="#">Join Us</a>
+        </div>
+        <p> &copy; 2020</p>
+        </footer>
+
+        
+    </body>
+    <script src="main.js"></script>
+</html>
